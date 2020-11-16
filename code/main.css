@@ -1,0 +1,108 @@
+
+/*navigation*/
+
+.title-bar{
+  background-color: white;
+  color: black;
+}
+.title-bar-left{
+  color:#df8c63;
+}
+.navigation ul li a{
+    color: black;
+    position: relative;
+}
+/*nav a stroke line */
+.navigation ul li a,
+.navigation ul li a:after,
+.navigation ul li a:before {
+  transition: all .5s;
+}
+.navigation ul li a:hover {
+    color:  #df8c63;
+  }
+  .navigation ul li a:after {
+    position: absolute;
+    margin: auto;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '.';
+    color: transparent;
+    background: #df8c63;
+    height: 2px;
+  }
+  .navigation ul li a:hover:after {
+    width: 100%;
+  }
+/*Hide the navigation icon on large screens*/
+.navigation .icon {
+    display:none;
+}
+.footer{
+  background-color: white;
+  max-width: 1170px;
+  padding-top: 15px 0px 0px 20px;
+  width: 100%;
+  background-color: white;
+  margin: 50px auto 5px;
+}
+
+.footer ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+/*navigation Responsiviness*/
+@media screen and (max-width: 600px) {
+  .navigation a:not(.display-responsive){
+     display:none;
+  }
+  .display-responsive{
+      margin-left: 100px;
+   }
+  .navigation a.icon {
+    float: right;
+    display: block;
+    margin-right: 40px;
+    padding: 27px 5px 9px 0px;
+  }
+}
+
+@media (max-width: 600px){
+  .flex-grid{
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) { /* display the links vertically on small screens*/
+  /*class added by js when icon is clicked*/
+  .navigation.responsive {
+      position: relative;
+  } 
+  .navigation.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 42px 16px 9px 16px;
+  }
+  .navigation.responsive ul li{
+      display: block;
+      text-align: left;
+  }
+  .navigation.responsive ul li a{
+      display:inline-block;
+      padding: 27px 20px 14px;
+      margin-left: 10px;
+  }
+  .navigation.responsive .logo-container img{
+    display:none;
+  }
+}
+
+
+
+  
+
+  
+
