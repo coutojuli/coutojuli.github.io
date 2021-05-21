@@ -1,6 +1,6 @@
 {
-  "homepage": "http://coutojuli.github.io",
-  "name": "portfolio",
+  "homepage": "http://coutojuli.github.io/",
+  "name": "coutojuli.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
