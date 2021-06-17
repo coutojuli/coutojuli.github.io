@@ -84,7 +84,8 @@ const ProjectModal = (props) => {
                   <h3>Links</h3>
                   <ul>
                     <li>Source Code: {props.project.githubPath.includes("github.com") ? <a target="_blank" href={props.project.githubPath} rel="noreferrer">{props.project.githubPath}</a> : props.project.githubPath}</li>
-                    <li>Deployment Link: {props.project.url.includes("Not Deployed") ? props.project.url : <a target="_blank" href={props.project.url} rel="noreferrer">{props.project.url}</a>}</li>
+                    <li>Deployment Link: {(props.project.url.includes(".com") || props.project.url.includes(".ca") || props.project.url.includes(".io")) ?
+                         <a target="_blank" href={props.project.url} rel="noreferrer">{props.project.url}</a> : props.project.url}</li>
                   </ul>
                 </div>
               </Grid>
