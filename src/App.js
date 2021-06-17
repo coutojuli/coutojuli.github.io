@@ -3,10 +3,9 @@ import Navbar from './Components/Navbar';
 import Experience from './Components/Experience';
 import Education from './Components/Education';
 import About from './Components/About';
-import Projects from './Components/Projects';
+import Projects from './Components/Projects/Projects';
 import Footer from './Components/Footer';
-import Certifications from './Components/Certifications';
-import Languages from './Components/Languages';
+import Skills from './Components/Skills';
 import './styles.css';
 import {useLocation} from "react-router-dom";
 import Blog from "./Components/Blog";
@@ -39,9 +38,8 @@ function App() {
         <div className="wrapper">
           <About/>
           <Education/>
-          <Certifications/>
           <Experience/>
-          <Languages/>
+          <Skills/>
           <Projects/>                  
           {/* <Blog/> */}
         </div> 

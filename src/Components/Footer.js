@@ -10,19 +10,19 @@ const Footer = () => {
     <div className="footer">
       <div className="wrapper">
         <Grid container spacing={2}>
-          <Grid xs={4}>
+          <Grid item  xs={4}>
             <div className="footer-left">          
               <p>© 2021 Juliana Claussen.</p>
               <p>All rights reserved.</p>
             </div>
           </Grid>
-          <Grid xs={4}>
+          <Grid item xs={4}>
             <div className="footer-middle">
               <h2>General Inquiries:</h2>
               <p> juliana.correa.couto@gmail.com</p>
             </div>
           </Grid>
-          <Grid xs={4}>
+          <Grid item xs={4}>
             <div className="footer-right">
               <h1>Connect with me:</h1>          
               <ul>
