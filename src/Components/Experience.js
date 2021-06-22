@@ -47,7 +47,7 @@ const Experience = () => {
       id: "3",
       experience: "Civil Engineering Intern",
       from: "May 2016",
-      to: "August 2016",
+      to: "Aug 2016",
       company: "Bergamo Enganharia Ltda",
       location: "Rio de Janeiro, Brasil",
       description: ["Developed project blueprints using AutoCAD.","Estimated construction costs of prospective projects."],

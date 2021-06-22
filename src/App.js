@@ -44,7 +44,6 @@ function App() {
           {/* <Blog/> */}
         </div> 
         <Footer/>
-
     </div>
   );
 }

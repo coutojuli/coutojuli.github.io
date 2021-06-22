@@ -117,7 +117,7 @@ const Projects = () => {
           <Grid container spacing={5}>     
               {projects.map(item=>{
                 return (
-                  <Grid item xs={6} className="project">
+                  <Grid item sm={12} md={6} className="project">
                     <Project
                       project = {item}
                     />

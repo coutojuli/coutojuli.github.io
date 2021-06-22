@@ -1,15 +1,31 @@
-.main-head {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.main-header {
   background-color: white;
   position: fixed;
   width: 100%;
   min-height: 30px;
-  z-index: 999;
+  z-index: 1;
   top:0;
+  left: 0;
 }
+
 .wrapper{
   max-width: 1000px;
   margin: 0px auto;
 }
+
+.navigation {
+  vertical-align: middle;
+}
+
 .navigation ul{
   display: flex;
   justify-content: space-between;
@@ -48,9 +64,14 @@
   left: 0; 
 }
 .banner{
-  margin: 100px auto;
-  display: block;
+    margin: 100px auto;
+    display: block;
 }
+
+title{
+  text-align: center;
+}
+
 .petbyus-project{
   background: url("../src/Images/petbyusProject2.png") no-repeat;
   width:100%;
@@ -69,7 +90,6 @@
   height: 350px;
   margin: 20px auto 0px;
 }
-
 .crms-project{
   background: url("../src/Images/CRMSProject1.png") no-repeat;
   width:100%;
@@ -107,16 +127,19 @@
 }
 .project-text{
   text-align: left;
-  padding: 20px 0px 0px 70px;
+  padding: 20px 0px 0px 80px;
 }
+
 .project-text h2{
   font-size: 17px;
   padding: 0px 15px;
 }
+
 .project-text  li{
   padding:4px;
   font-size: 15px;
 }
+
 .title{
   font-family: Open Sans, sans-serif;
   font-size: 50px;
@@ -127,68 +150,85 @@
 #skills{
   margin: 50px auto;
 }
+
 #skills ul{
   width:100%;
   margin: 0px 200px;
   padding: 230px 80px;
 }
+
 #skills li{
   list-style-type:square;
 }
+
 .skills-wrapper{
   background: url("../src/Images/certification-bg3.png") no-repeat;
   width:100%;
   height:500px;
 }
+
 .skills-list{
   margin: 0px 30px;
 }
+
 .about-image{
   text-align:'right';
 }
+
 .about-text{
   text-align: left;
   margin:70px 0px 0px 50px;
 }
+
 .about-text p{
   padding: 5px;
 }
+
 .educationContainer{
   margin: 30px auto;
   text-align: center;
 }
+
 .educationContainer ul{
   text-align: center;
 }
+
 .educationContainer h1{
   font-size: 17px;
 }
+
 .educationContainer p{
   font-size: 15px;
 }
+
 .experience-entry{
   text-align: right;
   margin: 10px;
 }
+
 .experience-timeline{
   margin: 0px auto;
 }
+
 .experience-timeline ul{
   margin: 20px 0px;
   padding: 0px 10px;
   width: 100%;
 }
+
 .experience-timeline li{
   list-style: inside;
   margin: 10px 0px;
   text-align: left;
 }
+
 .video-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
 }
+
 .video-responsive iframe {
   left: 0;
   top: 0;
@@ -196,6 +236,22 @@
   width: 100%;
   position: absolute;
 }
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-paper {
+    background-color: white;
+    border: 3px solid #dce7e8;
+    width: 80vw;
+    height: 80vh;
+    box-shadow: grey;
+    padding: 20px;
+}
+
 .modal-text{
   padding: 5px 20px;
   margin: 0px 20px;
@@ -205,7 +261,6 @@
  font-size: 15px;
 }
 .modal-video-container{
-  /* background: url("../src/Images/background-modal2.png") no-repeat; */
   position: absolute;
   width: 40vw;
 }
@@ -218,6 +273,12 @@
   font-size: 30px;
   margin: 20px auto;
   text-align:center;
+}
+
+.modal-button{
+  background-color: #F7F5F2;
+  height: 30px;
+  width: 110px;
 }
 
 .footer{
@@ -251,4 +312,294 @@
   display:inline;
   color: black;
   margin: 0px 20px;
+}
+
+/* Tablet Media Query - Between 740px - 980px*/
+@media (max-width:950px){
+  .main-header {
+    width: 100vw;
+  }
+
+  .navigation ul{
+    justify-content:center;
+    height: 80px;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  .navigation li img{
+    display: none;
+  }
+
+  .banner{
+    width: 100vw;
+    display: inline-block;
+    margin: 100px auto 30px;
+  }
+
+  .title{
+    text-align: center;
+    margin: 60px auto 40px;
+    font-size: 50px;
+  }
+
+  .about-text p {
+    text-align: left;
+    font-size: 20px;
+    margin: 30px;
+  }
+
+  .educationContainer__grid h1{
+    font-size: 25px;
+  }
+
+  .educationContainer__grid p{
+    font-size: 20px;
+  }
+
+  .skills-wrapper{
+    background: url("../src/Images/certification-bg3.png") no-repeat center/contain border-box;
+    width: 100vw;
+  }
+
+  .skills-list{
+    margin: 20px 40px;
+  }
+
+  #skills ul{
+    width: 100%;
+    padding: 220px 0px;
+    display: inline-block;
+  }
+
+  #skills ul:last-of-type{
+    margin-right: 0px;
+  }
+  
+  .project {
+    padding-right: 0px;
+  }
+
+  .petbyus-project, 
+  .books-project,
+  .project,
+  .mhirj-project,
+  .crms-project,
+  .hrms-project,
+  .DBBooks-project,
+  .portfolio-project,
+  .restaurant-project
+  {
+    width:90vw;
+    height: 50vh;
+    margin: 0px auto;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .project-h1{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 60px 0px 0px;
+  }
+
+  .project-text{
+    text-align: left;
+    padding: 30px 0px 0px 0px;
+    margin: 30px 0px 0px 90px;
+    display: inline-block;
+  }
+
+  .project-text  li{
+    font-size: 23px;
+  }
+
+  .project-text  li:last-of-type{
+    margin-bottom: 40px;
+  }
+
+  .modal-button{
+    height: 40px;
+    width: 150px;
+  }
+ 
+  .modal {
+    overflow: hidden;
+  }
+
+  .modal-video-container{
+    position: relative;
+    margin: auto;
+    width: 100%;
+  }
+  
+  .modal-video{
+    margin: 0px;
+  }
+
+  .modal-text {
+    height: 35vh;
+    padding: 5px;
+    overflow:scroll;
+  }
+
+  .footer{
+    margin: 90px auto 0px;
+    width: 100vw;
+    padding: 30px 20px 0px;
+  }
+}
+
+/* Mobile Media Query - Between 320px - 740px - Specificity will overwrite tablet query*/
+@media (max-width:740px){
+  .main-header {
+    width: 100vw;
+  }
+
+  .navigation ul{
+    justify-content:center;
+    height: 80px;
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .navigation li img{
+    display: none;
+  }
+
+  .banner{
+    width: 100vw;
+    display: inline-block;
+    margin: 100px auto 30px;
+  }
+
+  .title{
+    text-align: center;
+    margin: 50px auto 20px;
+    font-size: 40px;
+  }
+
+  .about-text p {
+    width: 100vw;
+    text-align: center;
+    margin: 5px auto;
+    font-size: 20px;
+    display: inline-block;
+  }
+
+  .educationContainer__grid{
+    width: 100vw;
+    margin: 30px auto 10px;
+  }
+  
+  .skills-wrapper{
+    background: url("../src/Images/certification-bg3.png") no-repeat 35% 20%/cover border-box;
+    width: 100vw;
+  }
+
+  .skills-list{
+    margin: 40px 0px 0px 80px;
+  }
+
+  #skills ul{
+    width: 100%;
+    padding: 230px 0px;
+    display: inline-block;
+    margin: 0 30px;
+  }
+
+  .petbyus-project, 
+  .books-project,
+  .project,
+  .mhirj-project,
+  .crms-project,
+  .hrms-project,
+  .DBBooks-project,
+  .portfolio-project,
+  .restaurant-project
+  {
+    width:100vw;
+    margin: 0px auto;
+    padding: 0;
+  }
+  
+  .project-h1{
+    font-size: 20px;
+    text-align: right;
+    padding: 21px 120px 0px 0px;
+  }
+
+  .project-h1{
+    font-size: 22px;
+    text-align: center;
+    padding: 20px 60px 0px 0px;
+  }
+
+  .project-text{
+    text-align: left;
+    padding: 10px 0px 0px 0px;
+    margin: 20px 0px 0px 20px;
+    display: inline-block;
+  }
+
+  .project-text  li{
+    font-size: 17px;
+  }
+
+  .project-text  li:last-of-type{
+    margin-bottom: 20px;
+  }
+
+  .modal-button{
+    height: 30px;
+    width: 120px;
+  }
+
+  .modal-video-container{
+    position: relative;
+    margin: auto;
+    width: 100%;
+  }
+  
+  .modal {
+    overflow: hidden;
+  }
+
+  .modal-video{
+    margin: 0px;
+  }
+
+  .modal-text {
+    height: 35vh;
+    padding: 5px;
+    overflow:scroll;
+  }
+
+  .footer{
+    margin: 90px auto 0px;
+    width: 100vw;
+    padding: 30px 20px 0px;
+  }
+
+  .footer-left {
+    padding-left: 20px;
+  }
+
+  .footer-right{
+    text-align: right;
+  }
+  .footer-right h1{
+    margin-right: 0px;
+    text-align: right;
+  }
+
+  .footer-right li{
+    display:inline;
+    color: black;
+    margin: 0px;
+  }
+  .footer-middle{
+    display: none;
+  }
+
 }

@@ -8,43 +8,32 @@ const Skills = () => {
       <h1 className="title">Skills</h1>
       <div className="skills-wrapper">
          <div className="skills-list">
-         <Grid container spacing={2}>
-           <Grid item xs={2}>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-              <li>React</li>
-              <li>PHP</li>
-              <li>C#</li>
-              <li>Java</li>
-            </ul>
-           </Grid>
-           <Grid item xs={6}>
-            <ul>
-              <li>SQL Server</li>
-              <li>Oracle</li>
-              <li>MySQL</li>
-              <li>MongoDB</li>
-              <li>Firebase</li>
-              <li>Git</li>
-              <li>Foundation</li>
-              <li>Bootstrap</li>
-            </ul>
-           </Grid>
-         </Grid>
-         <ul>
-            {/* <li>ECMAScript6+</li>
-            <li>React – The Complete Guide</li>
-            <li>React - WesBos</li>
-            <li>JavaScript - WesBos</li>
-            <li>Mean Stack Development</li>
-            <li>Web App Dev using PHP</li>
-            <li>Windows App. Dev using C#.NET</li>
-            <li>Distrib. App Dev using .NET</li>
-            <li>Web App Dev using ASP.NET</li> */}
-          </ul>
+          <Grid container spacing={2}>
+            <Grid item sm={2}>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>React</li>
+                <li>PHP</li>
+                <li>C#</li>
+                <li>Java</li>
+              </ul>
+            </Grid>
+            <Grid item sm={6}>
+              <ul>
+                <li>SQL Server</li>
+                <li>Oracle</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Firebase</li>
+                <li>Git</li>
+                <li>Foundation</li>
+                <li>Bootstrap</li>
+              </ul>
+            </Grid>
+          </Grid>
         </div>
         </div>
     </div>

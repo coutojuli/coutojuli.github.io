@@ -7,10 +7,10 @@ const About = () => {
     <div className="root"> 
       <h1 className="title" id="about">About</h1>
       <Grid container spacing={2}>
-        <Grid item xs={6} className="about-image">
-          <img src='about8.jpg' alt="juliana profile"/>
+        <Grid item xs={12} sm={6}>
+          <img className="about-image" src='about8.jpg' alt="juliana profile"/>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={6} className="about-text">
           <p>Name: Juliana Claussen</p>
           <p>Email: juliana.correa.couto@gmail.com</p>
           <p>Location: Toronto, Ontario</p>
